@@ -1,0 +1,90 @@
+body {
+    font-family: Verdana, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background: #f4f6fb;
+}
+
+h2 {
+    color: #27374d;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+    border: 2px solid #cfcfcf;
+    border-radius: 8px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #6c63ff;
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #6c63ff;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #5548d9;
+}
+
+.board {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.column {
+    width: 280px;
+    min-height: 350px;
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid #d8d8d8;
+    padding: 15px;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+}
+
+.column h3 {
+    background: #27374d;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.task {
+    background: #dbeafe;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 10px;
+    cursor: move;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.task:hover {
+    transform: translateY(-2px);
+}
+
+.task button {
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.task button:first-of-type {
+    background: #f59e0b;
+}
+
+.task button:last-of-type {
+    background: #ef4444;
+}

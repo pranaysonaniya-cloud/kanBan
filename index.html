@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Management Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Task Tracker Board</h2>
+
+<input type="text" id="taskInput" placeholder="Add a new task">
+<button onclick="addTask()">Create Task</button>
+
+<div class="board">
+
+    <section class="column"
+             id="todo"
+             ondragover="allowDrop(event)"
+             ondrop="drop(event)">
+        <h3>Pending</h3>
+    </section>
+
+    <section class="column"
+             id="progress"
+             ondragover="allowDrop(event)"
+             ondrop="drop(event)">
+        <h3>Ongoing</h3>
+    </section>
+
+    <section class="column"
+             id="done"
+             ondragover="allowDrop(event)"
+             ondrop="drop(event)">
+        <h3>Completed</h3>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
